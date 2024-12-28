@@ -1,0 +1,285 @@
+/* variabel */
+:root{
+    --pr-color: #13334C;
+    --sc-color: #002e78;
+    --th-color: #f6f6e9;
+    --fr-color: #FD5F00; 
+    --pr-font: 'Poppins', sans-serif;
+    --sc-font: 'kavoon';
+}
+
+body{
+    background: linear-gradient(180deg, var(--pr-color), var(--sc-color));
+}
+
+/* navbar */
+
+.navbar {
+    /* background-color: var(--sc-color); */
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-color{
+    background: linear-gradient(180deg, var(--pr-color), var(--sc-color));
+    transition: all ease-in-out 0.3s;
+}
+
+.bg-transparent{
+    transition: all ease-in-out 0.3s;
+}
+
+.navbar-brand{
+    font-family: var(--sc-font);
+    font-size: 30px;
+    color: var(--th-color);
+}
+
+.navbar-nav {
+    font-family: var(--pr-font);
+    font-weight: 300;
+    font-size: 25;
+}
+
+.nav-link.active {
+    font-weight: 800;
+    color: var(--th-color);
+}
+
+.nav-link{
+    color: var(--th-color);
+}
+
+/* profil */
+
+#profil{
+    background: linear-gradient(180deg, var(--pr-color), var(--sc-color));
+    height: 100vh;
+    width: 100%;
+}
+
+#profil h1{
+    font-family: var(--sc-font);
+    font-size: 80px;
+    color: var(--th-color);
+    text-align: end;
+}
+
+#profil p{
+    font-family: var(--pr-font);
+    font-size: 20px;
+    color: var(--th-color);
+    text-align: end;
+    margin-left: 20px;
+}
+
+#profil .img-fluid{
+   width: 440px; 
+}
+
+.ask-me{
+    background-color: var(--fr-color);
+    color: var(--th-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    border: none;
+    border-radius: 10;
+}
+
+.ask-me:hover{
+    background : linear-gradient(90deg, #ff790a, #cc4402);
+    color: var(--th-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: medium;
+    border: none;
+    border-radius: 10;
+}
+
+/* portofolio */
+#portofolio .pr-text h1{
+    font-family: 'kavoon'; 
+    font-size: 80px;
+    color: var(--th-color);
+    text-align: center;
+ }
+
+ .desc-text{
+    font-family: var(--pr-font); 
+    font-size: 25px;
+    color: var(--th-color);
+    text-align: center;
+    line-height: auto;
+    width: 75%;
+ }
+
+ #portofolio .img-fluid{
+    transition: all ease-in-out 0.2s;
+ }
+
+ #portofolio .img-fluid:hover{
+    border-radius: 10px;
+    opacity: 50%;
+    transition: all ease-in-out 0.2s;
+ }
+ 
+ #portofolio .container-fluid{
+     background-color: var(--sc-color);
+ }
+
+ .project-name{
+    font-family: var(--pr-font);
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--th-color);
+ }
+
+  #portofolio p{
+    font-family: var(--pr-font);
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--th-color);
+ }
+
+ #portofolio .img-fluid{
+    object-fit: cover;
+ }
+
+ /* contact */
+ #contact .container-fluid {
+    background-color: var(--sc-color);
+ }
+
+ #contact .form{
+    align-items:center;
+    margin: auto;
+    max-width: 500px;
+ }
+
+ #contact .pr-text{
+    font-family: var(--sc-font); 
+    font-size: 80px;
+    color: var(--th-color);
+    text-align: center;
+ }
+
+label{
+    padding: 10px;
+    font-family: var(--pr-font);
+    font-weight: 800;
+    color: var(--th-color);
+}
+
+input[type=text], textarea {
+    width: 450px;
+    background-color:transparent;
+    border: 2px solid var(--th-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    resize: none;
+    color: var(--th-color);
+    font-family:'Poppins', sans-serif;
+}
+
+input[id=message] {
+    height: 100px;
+}
+
+input[type=email] {
+    width: 450px;
+    color: var(--th-color);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: 2px solid var(--th-color);
+    font-family:'Poppins', sans-serif
+}
+
+button{
+    font-family: var(--pr-font);
+    font-weight: 800;
+    color: var(--sc-color);
+    background-color: var(--th-color);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 15px;
+    transition: all ease-out 0.2s;
+}
+
+button:hover{
+    background-color: var(--fr-color);
+    border-radius: 5px;
+    margin: 5px;
+    transition: all ease-in-out 0.2s;
+}
+
+button:disabled {
+    cursor: not-allowed; /* Menampilkan kursor yang menunjukkan tombol tidak aktif */
+    opacity: 0.5; /* Memberikan efek tampak lebih redup pada tombol */
+    animation: none; /* Menonaktifkan animasi saat tombol dinonaktifkan */
+    transition: none; /* Menonaktifkan transisi */
+}
+
+/* social media */
+.container-fluid{
+    background-color: var(--sc-color);
+}
+
+#sosmed .container {
+    padding-bottom: 130px;
+    z-index: 1;
+}
+
+#sosmed .text{
+    font-family: var(--pr-font);
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--th-color);
+}
+
+#sosmed .img-sosmed{
+    width: 83px;
+    height: auto;
+    z-index: 2;
+    transition: all ease-out 0.3s;
+}
+
+#sosmed .img-sosmed:hover {
+    width: 83px;
+    height: auto;
+    z-index: 2;
+    opacity: 50%;
+    transition: all ease-in-out 0.3s;
+}
+
+
+*{
+    z-index: 0;
+}
+
+#sosmed .img-fluid{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* footer */
+/* akses class di dalam section, nama section, spasi class */
+footer .container-fluid {
+    background-color: var(--th-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--pr-color);
+}
+
+
+
