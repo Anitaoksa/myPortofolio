@@ -116,11 +116,12 @@ body{
 
  #portofolio .img-fluid{
     transition: all ease-in-out 0.2s;
+    opacity: 50%;
  }
 
  #portofolio .img-fluid:hover{
     border-radius: 10px;
-    opacity: 50%;
+    opacity: 1;
     transition: all ease-in-out 0.2s;
  }
  
@@ -242,7 +243,7 @@ button:disabled {
 #sosmed .text{
     font-family: var(--pr-font);
     font-weight: 300;
-    font-size: 25px;
+    font-size: 10px;
     color: var(--th-color);
 }
 
@@ -272,6 +273,21 @@ button:disabled {
     position: absolute;
     bottom: 0;
 }
+
+/* tambahan animasi */
+#sosmed .img-fluid {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.5s ease;
+}
+
+/* Animasi saat gambar bergerak ke atas */
+#sosmed .img-fluid.aos-animate {
+    transform: translateY(-100px);
+}
+
 
 /* footer */
 /* akses class di dalam section, nama section, spasi class */

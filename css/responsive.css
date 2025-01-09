@@ -118,6 +118,10 @@
         max-width: 300px;
     }
 
+    #sosmed .tagline-sosmed{
+        font-size : 15px
+    }
+
     input[type=text], textarea {
         width: 250px;
     }
